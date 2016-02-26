@@ -63,22 +63,40 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="header" class="center-content clearfix">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
+    <nav id="nav-bar">
+        <ul id="nav-menu">
+          <li><a class="nav-item " href="#main">HOME</a>
+          </li>
+          <li><a class="nav-item " href="#contaner">WORK EXPERIENCE</a>
+          </li>
+          <li><a class="nav-item" href="#projects">PROJECTS</a>
+          </li>
+          <li><a class="nav-item" href="#education">EDUCATION AND CERTIFICATION</a>
+          </li>
+        </ul>
+      </nav>
     <div style='clear: both;'></div>
-    
-    <div id="workExperience" class='gray'>
+    <div id="contaner">
+    <div id="workExperience" class='gray arrange-nav'>
       <h2>Work Experience</h2>
     </div>
-    <div id="projects">
+    </div>
+    <div id="projects" class='arrange-nav'>
       <h2>Projects</h2>
     </div>
-    <div id="education" class='gray'>
+    <div id="education" class='gray arrange-nav '>
       <h2>Education</h2>
     </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:1000px;padding-left: 8%;'><div id='gmap_canvas' style='height:440px;width:900px;'></div><div><small><a href='http://embedgooglemaps.com'>									embed google map							</a></small></div><div><small><a href='http://www.freedirectorysubmissionsites.com/''>www.freedirectorysubmissionsites.com</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(12.9610239,77.59725209999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9610239,77.59725209999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Gerg Store </strong><br>Jayanagar 9th block ,opposite to central mall Bangalore <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    <div id="skillsChart">
+      <h2>Skills Chart</h2>
+      <svg class="chart" style="width: 1323px; height: 310px;"><g transform="translate(67,30)"><g class="x axis" transform="translate(0,250)"><g class="tick" transform="translate(0,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;"></text></g><g class="tick" transform="translate(245.4,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">Beginner</text></g><g class="tick" transform="translate(490.8,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">Intermediate</text></g><g class="tick" transform="translate(736.1999999999999,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">Advanced</text></g><g class="tick" transform="translate(981.6,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">Expert</text></g><g class="tick" transform="translate(1227,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".71em" y="9" x="0" style="text-anchor: middle;">Master</text></g><path class="domain" d="M0,6V0H1227V6"></path></g><g class="bar" transform="translate(0,0)"><rect width="490.8" height="45"></rect><text x="15" y="25" dy=".35em">HTML</text></g><g class="bar" transform="translate(0,50)"><rect width="453.99" height="45"></rect><text x="15" y="25" dy=".35em">CSS</text></g><g class="bar" transform="translate(0,100)"><rect width="638.0400000000001" height="45"></rect><text x="15" y="25" dy=".35em"> JavaScript</text></g><g class="bar" transform="translate(0,150)"><rect width="613.5" height="45"></rect><text x="15" y="25" dy=".35em">jQuery</text></g><g class="bar" transform="translate(0,200)"><rect width="245.4" height="45"></rect><text x="15" y="25" dy=".35em">d3.js</text></g></g></svg>
     </div>
-    <div id="letsConnect" class='dark-gray'>
+    <div id="mapDiv" class="move-to-right">
+      <h2>Where I've Lived and Worked</h2>
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='padding-left:5%;overflow:hidden;height:400px;width:1000px;'><div id='gmap_canvas' style='height:400px;width:1000px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google map              </a></small></div><div><small><a href="http://freedirectorysubmissionsites.com">directory submission sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:2,center:new google.maps.LatLng(12.9606546,77.49664689999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9606546,77.49664689999997)});infowindow = new google.maps.InfoWindow({content:'<strong>places I worked </strong><br>gergstore Jayanagar 9th block ,Bangalore ,India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      
+    </div>
+    <div id="letsConnect" class='dark-gray '>
       <h2 class='orange center-text'><a href="https://www.facebook.com/sujil.anto">Let's Connect</a></h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
@@ -91,6 +109,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   dynamically when this website, index.html, is opened.
   -->
   <script src="js/resumeBuilder.js"></script>
+  <script src="js/interaction.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js" charset="utf-8"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDtwE-aGCGH5JJyJdW_4SfY_adZtkp8mao"></script>
 
 
   <!--
